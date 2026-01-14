@@ -3,59 +3,144 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy</title>
+    <title>Privacy Policy - Automatizaciones n8n</title>
     <meta name="robots" content="index,follow" />
     <style>
-      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 40px auto; max-width: 900px; padding: 0 16px; line-height: 1.5; }
-      h1 { margin-bottom: 0.2rem; }
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 40px auto;
+        max-width: 900px;
+        padding: 0 16px;
+        line-height: 1.55;
+      }
+      h1 { margin-bottom: 0.25rem; }
       .meta { color: #555; margin-bottom: 1.5rem; }
-      h2 { margin-top: 1.5rem; }
-      code, pre { background: #f5f5f5; padding: 2px 6px; border-radius: 6px; }
-      hr { margin: 2rem 0; border: none; border-top: 1px solid #ddd; }
+      h2 { margin-top: 1.6rem; }
+      h3 { margin-top: 1.2rem; }
+      code, pre {
+        background: #f5f5f5;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+      ul { padding-left: 18px; }
+      .box {
+        background: #f6f6f6;
+        border-radius: 12px;
+        padding: 14px 16px;
+        margin: 14px 0;
+      }
+      hr {
+        margin: 2rem 0;
+        border: none;
+        border-top: 1px solid #ddd;
+      }
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
     </style>
   </head>
+
   <body>
     <h1>Privacy Policy</h1>
-    <div class="meta">Last updated: 2026-01-14</div>
+    <div class="meta">Application: <strong>Automatizaciones n8n</strong> · Last updated: 2026-01-14</div>
 
+    <div class="box">
+      <p>
+        <strong>Automatizaciones n8n</strong> is a personal automation application used to run workflows locally
+        using <strong>n8n</strong> (self-hosted in a Docker container).
+      </p>
+      <p>
+        This application connects to Google services (Gmail, Google Calendar, Google Drive and Google Analytics)
+        only to execute user-configured automations.
+      </p>
+    </div>
+
+    <h2>Data controller</h2>
     <p>
-      This application is a personal automation tool that connects to my Google account (Gmail and Google Calendar)
-      to run workflows locally using <strong>n8n</strong>.
+      This application is for personal use only. The owner/operator of the application is the developer of the
+      Google Cloud OAuth client used to access Google APIs.
     </p>
 
     <h2>Data processed</h2>
     <p>
-      The app may access and process Gmail and Google Calendar data depending on the permissions granted
-      (e.g., email content and metadata, calendar events). Data is used only to execute the configured automations.
+      Depending on the permissions granted, this application may access and process the following data:
     </p>
+
+    <h3>Gmail</h3>
+    <ul>
+      <li>Read and search email messages (content and metadata)</li>
+      <li>Move messages between labels/folders</li>
+      <li>Create and modify labels</li>
+      <li>Create drafts</li>
+      <li>Send emails (e.g., automated notifications)</li>
+    </ul>
+
+    <h3>Google Calendar</h3>
+    <ul>
+      <li>Create events</li>
+      <li>Read/list events</li>
+      <li>Modify/update events</li>
+      <li>Delete events (when required by the workflow)</li>
+    </ul>
+
+    <h3>Google Drive (including Google Docs/Sheets)</h3>
+    <ul>
+      <li>Create, rename, move and delete folders</li>
+      <li>Upload, rename, move and delete files</li>
+      <li>Create, modify and delete Google Workspace documents (Docs, Sheets, etc.)</li>
+    </ul>
+
+    <h3>Google Analytics</h3>
+    <ul>
+      <li>Read and download analytics data for reporting/analysis</li>
+      <li>No configuration or administrative changes are performed unless explicitly configured</li>
+    </ul>
+
+    <h2>Purpose of processing</h2>
+    <p>
+      Data is processed exclusively for personal automation purposes, such as:
+    </p>
+    <ul>
+      <li>Email organization (labelling, moving, filtering)</li>
+      <li>Automated notifications and message sending</li>
+      <li>Calendar scheduling automation</li>
+      <li>Document generation and management in Drive (Docs/Sheets)</li>
+      <li>Analytics reporting and personal analysis</li>
+    </ul>
 
     <h2>Data storage</h2>
     <p>
-      No Gmail or Google Calendar data is stored permanently. Data is processed locally for automation purposes
-      and then discarded. The application does not maintain its own copies of emails, events, or attachments.
+      This application does not permanently store Gmail messages, calendar events, Drive files or Analytics data.
+      Data is processed locally for automation purposes and then discarded.
+    </p>
+
+    <p>
+      Some transient data may appear in execution logs within n8n (for example, workflow execution metadata).
+      The user can configure n8n to minimize or disable saving execution data.
     </p>
 
     <h2>Credentials and tokens</h2>
     <p>
-      OAuth credentials/tokens required to access Google APIs are stored locally by my self-hosted n8n instance
-      running inside a Docker container, using n8n’s credential storage/encryption mechanisms.
+      OAuth tokens required to access Google APIs are stored locally by the self-hosted n8n instance running
+      inside a Docker container. n8n stores credentials using its own credential encryption/storage mechanisms.
     </p>
 
     <h2>Data sharing</h2>
     <p>
-      No data is shared with third parties. All processing happens locally on my machine.
+      No data is sold or shared with third parties. All processing happens locally on the user's environment
+      unless a workflow explicitly sends data to an external service chosen by the user.
     </p>
 
     <h2>Security</h2>
     <p>
-      Access is restricted to my local environment. No external users have access to the application or its data.
+      The n8n instance is private and protected by authentication. Access is restricted to the user's local/private
+      environment.
     </p>
 
     <h2>User controls and revocation</h2>
     <p>
-      You can revoke the app’s access at any time in your Google Account settings under
+      You can revoke this application's access at any time from your Google Account settings:
       <strong>Security</strong> → <strong>Third-party access</strong> (or “Manage third-party access”).
-      After revocation, the app will no longer be able to access Gmail/Calendar.
+      After revocation, the application will no longer be able to access Google services.
     </p>
 
     <h2>Contact</h2>
@@ -66,7 +151,7 @@
     <hr />
 
     <p style="color:#666;font-size:0.95rem">
-      This policy is intended for personal use of a self-hosted automation setup and applies only to this application.
+      This privacy policy applies only to <strong>Automatizaciones n8n</strong> and its usage as described above.
     </p>
   </body>
 </html>
