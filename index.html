@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,62 +11,66 @@
         margin: 40px auto;
         max-width: 900px;
         padding: 0 16px;
-        line-height: 1.5;
+        line-height: 1.55;
       }
-      h1 { margin-bottom: 0.2rem; }
+      h1 { margin-bottom: 0.25rem; }
       .meta { color: #555; margin-bottom: 1.5rem; }
+      h2 { margin-top: 1.6rem; }
+      ul { padding-left: 18px; }
       a { text-decoration: none; }
       a:hover { text-decoration: underline; }
-      ul { padding-left: 18px; }
       .box {
-        background: #f5f5f5;
+        background: #f6f6f6;
         border-radius: 12px;
-        padding: 16px;
+        padding: 14px 16px;
+        margin: 14px 0;
       }
       .note {
         color: #666;
         font-size: 0.95rem;
         margin-top: 1rem;
       }
-      code {
-        background: #eee;
-        padding: 2px 6px;
-        border-radius: 6px;
-      }
     </style>
   </head>
 
   <body>
     <h1>Automatizaciones n8n</h1>
-    <div class="meta">
-      Automatizaciones personales autoalojadas (n8n en Docker).
-    </div>
+    <div class="meta">Personal self-hosted automations (n8n running locally in Docker).</div>
 
     <div class="box">
       <p>
-        Esta aplicación se usa únicamente para ejecutar automatizaciones personales que se conectan a mi cuenta
-        de Google para procesar datos de <strong>Gmail</strong> y <strong>Google Calendar</strong>.
+        This application is used exclusively to run personal automation workflows using <strong>n8n</strong>
+        (self-hosted). It connects to Google services to execute user-configured automations.
       </p>
       <p>
-        Todo el procesamiento se realiza <strong>localmente</strong> en una instancia privada de n8n. No se
-        almacena de forma permanente el contenido de correos ni eventos.
-      </p>
-      <p>
-        La interfaz de n8n está protegida con autenticación (no es pública).
+        The n8n web interface is private and protected by authentication (it is not a public website).
       </p>
     </div>
 
-    <h2>Información legal</h2>
+    <h2>Google services used</h2>
     <ul>
-      <li><a href="https://iraitzcordero.github.io/n8n-oauth-legal/privacy-policy.html">Política de privacidad</a></li>
-      <li><a href="https://iraitzcordero.github.io/n8n-oauth-legal/terms-of-service.html">Condiciones del servicio</a></li>
+      <li><strong>Gmail</strong>: read/search emails, apply labels, move messages, create drafts, send emails</li>
+      <li><strong>Google Calendar</strong>: create, read and update events</li>
+      <li><strong>Google Drive</strong>: manage folders/files and Google Workspace documents (Docs, Sheets, etc.)</li>
+      <li><strong>Google Analytics</strong>: read-only access for reporting and analysis</li>
+    </ul>
+
+    <h2>Legal</h2>
+    <ul>
+      <li>
+        <a href="https://iraitzcordero.github.io/n8n-oauth-legal/privacy-policy.html">
+          Privacy Policy
+        </a>
+      </li>
+      <li>
+        <a href="https://iraitzcordero.github.io/n8n-oauth-legal/terms-of-service.html">
+          Terms of Service
+        </a>
+      </li>
     </ul>
 
     <p class="note">
-      Nota: Esta página existe únicamente para cumplir los requisitos de la pantalla de consentimiento OAuth de Google.
+      Note: This site exists only to provide application information and legal pages for Google OAuth consent requirements.
     </p>
   </body>
 </html>
-
-
-
