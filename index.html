@@ -1,14 +1,71 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Legal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Automatizaciones n8n</title>
+    <meta name="robots" content="index,follow" />
+    <style>
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 40px auto;
+        max-width: 900px;
+        padding: 0 16px;
+        line-height: 1.5;
+      }
+      h1 { margin-bottom: 0.2rem; }
+      .meta { color: #555; margin-bottom: 1.5rem; }
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      ul { padding-left: 18px; }
+      .box {
+        background: #f5f5f5;
+        border-radius: 12px;
+        padding: 16px;
+      }
+      .note {
+        color: #666;
+        font-size: 0.95rem;
+        margin-top: 1rem;
+      }
+      code {
+        background: #eee;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Legal</h1>
+    <h1>Automatizaciones n8n</h1>
+    <div class="meta">
+      Automatizaciones personales autoalojadas (n8n en Docker).
+    </div>
+
+    <div class="box">
+      <p>
+        Esta aplicación se usa únicamente para ejecutar automatizaciones personales que se conectan a mi cuenta
+        de Google para procesar datos de <strong>Gmail</strong> y <strong>Google Calendar</strong>.
+      </p>
+      <p>
+        Todo el procesamiento se realiza <strong>localmente</strong> en una instancia privada de n8n. No se
+        almacena de forma permanente el contenido de correos ni eventos.
+      </p>
+      <p>
+        La interfaz de n8n está protegida con autenticación (no es pública).
+      </p>
+    </div>
+
+    <h2>Información legal</h2>
     <ul>
-      <li><a href="privacy-policy.html">Privacy Policy</a></li>
-      <li><a href="terms-of-service.html">Terms of Service</a></li>
+      <li><a href="./privacy-policy.html">Política de privacidad</a></li>
+      <li><a href="./terms-of-service.html">Condiciones del servicio</a></li>
     </ul>
+
+    <p class="note">
+      Nota: Esta página existe únicamente para cumplir los requisitos de la pantalla de consentimiento OAuth de Google.
+    </p>
   </body>
 </html>
+
+
