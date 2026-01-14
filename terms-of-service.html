@@ -3,47 +3,95 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Terms of Service</title>
+    <title>Terms of Service - Automatizaciones n8n</title>
     <meta name="robots" content="index,follow" />
     <style>
-      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 40px auto; max-width: 900px; padding: 0 16px; line-height: 1.5; }
-      h1 { margin-bottom: 0.2rem; }
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 40px auto;
+        max-width: 900px;
+        padding: 0 16px;
+        line-height: 1.55;
+      }
+      h1 { margin-bottom: 0.25rem; }
       .meta { color: #555; margin-bottom: 1.5rem; }
-      h2 { margin-top: 1.5rem; }
-      code, pre { background: #f5f5f5; padding: 2px 6px; border-radius: 6px; }
-      hr { margin: 2rem 0; border: none; border-top: 1px solid #ddd; }
+      h2 { margin-top: 1.6rem; }
+      ul { padding-left: 18px; }
+      .box {
+        background: #f6f6f6;
+        border-radius: 12px;
+        padding: 14px 16px;
+        margin: 14px 0;
+      }
+      hr {
+        margin: 2rem 0;
+        border: none;
+        border-top: 1px solid #ddd;
+      }
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
     </style>
   </head>
+
   <body>
     <h1>Terms of Service</h1>
-    <div class="meta">Last updated: 2026-01-14</div>
+    <div class="meta">Application: <strong>Automatizaciones n8n</strong> · Last updated: 2026-01-14</div>
 
+    <div class="box">
+      <p>
+        <strong>Automatizaciones n8n</strong> is a personal, self-hosted automation application used to run
+        workflows locally using <strong>n8n</strong> inside a Docker container.
+      </p>
+      <p>
+        The n8n interface is private and requires authentication. This website exists only to provide information
+        about the application and its legal pages for Google OAuth consent purposes.
+      </p>
+    </div>
+
+    <h2>Intended use</h2>
     <p>
-      This application is a personal, self-hosted automation tool used solely by me to run local workflows (n8n)
-      connected to my Google account (Gmail and Google Calendar).
+      This application is intended for personal use only, to automate tasks connected to the user's own Google account.
+      It is not offered as a public service or commercial product.
     </p>
 
-    <h2>Use</h2>
+    <h2>Permissions and access</h2>
     <p>
-      The app is provided for personal use only. You must grant the necessary Google permissions to enable the
-      automations you configure.
+      The application may request access to Google services such as Gmail, Google Calendar, Google Drive and Google Analytics.
+      These permissions are used only to execute the workflows configured by the user.
     </p>
+
+    <h2>User responsibility</h2>
+    <p>
+      The user is responsible for:
+    </p>
+    <ul>
+      <li>Configuring workflows correctly and safely</li>
+      <li>Ensuring automations do not unintentionally delete, modify or disclose data</li>
+      <li>Reviewing requested permissions before granting access</li>
+      <li>Revoking access if the application should no longer access Google services</li>
+    </ul>
 
     <h2>No warranties</h2>
     <p>
-      The app is provided “as is”, without warranties of any kind. Workflows may fail, produce unexpected results,
-      or be interrupted.
+      This application is provided “as is”, without warranties of any kind. Automations may fail, produce unexpected results,
+      or be interrupted due to network issues, Google API limitations, or configuration errors.
     </p>
 
     <h2>Limitation of liability</h2>
     <p>
-      I am not liable for any damages or losses resulting from the use of the app, including data loss,
-      missed emails/events, or workflow failures.
+      The owner/operator is not liable for any damages or losses resulting from the use of the application, including
+      data loss, missed emails/events, workflow failures, or unintended modifications to Drive contents.
+    </p>
+
+    <h2>Availability</h2>
+    <p>
+      The application runs in a self-hosted environment. Availability depends on the user's device, Docker configuration,
+      and network connectivity.
     </p>
 
     <h2>Changes</h2>
     <p>
-      These terms may be updated as the application changes. The latest version will be available at the URL
+      These terms may be updated as the application or its workflows evolve. The latest version will be available at the URL
       where these terms are published.
     </p>
 
@@ -55,7 +103,7 @@
     <hr />
 
     <p style="color:#666;font-size:0.95rem">
-      These terms are intended for personal use of a self-hosted automation setup and apply only to this application.
+      These terms apply only to <strong>Automatizaciones n8n</strong> as described on this site.
     </p>
   </body>
 </html>
